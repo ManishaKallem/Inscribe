@@ -10,8 +10,8 @@ Go to the [poetry](https://python-poetry.org/docs/) website and follow the
 2. Clone the project for local development.
 
 ```bash
-git clone https://github.com/IgnisDa/pass-gen
-cd pass-gen/
+git clone https://github.com/IgnisDa/Inscribe
+cd Inscribe/
 ```
 
 3. Install the project dependencies (virtual environment will be created automatically).
