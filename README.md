@@ -18,7 +18,7 @@ database and can be accessed and edited later.
 ## Built With
 
 - [django](https://www.djangoproject.com/) - The main web framework used
-- [bootstrap](https://getbootstrap.com/) - Used as the main UI framework
+- [UIKit](https://getuikit.com/) - Used as the main UI framework
 
 ## Contributing
 
