@@ -48,7 +48,7 @@ ROOT_URLCONF = 'inscribe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'inscribe' / 'templates', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
