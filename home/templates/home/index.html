@@ -1,0 +1,23 @@
+<!-- prettier-ignore -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inscribe{% endblock %}
+
+{% block body %}
+<div
+  class="uk-child-width-expand@s uk-text-centeruk-grid-match uk-position-center"
+  uk-grid
+>
+  <div class="uk-card uk-card-default uk-card-body">
+    <div
+      class="uk-text-bolder uk-text-large uk-text-uppercase uk-text-center uk-height-1-1"
+    >
+      <div class="uk-position-center">Inscribe</div>
+    </div>
+  </div>
+  <div class="uk-card uk-card-default uk-card-body">
+    <img src="{% static 'images/notes.svg' %}" class="" alt="notes-svg" />
+  </div>
+</div>
+{% endblock %}
