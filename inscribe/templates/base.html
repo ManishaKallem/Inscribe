@@ -12,21 +12,18 @@
   </head>
   <body>
     <div class="h-100 container-fluid">
-      <div class="row bg-dark h-100">
+      <div class="row h-100">
         <!-- Will contain the Navbar -->
-        <div class="col-2 bg-success">
-          {% block navbar %}
-          <header>{% include 'includes/navbar.html' %}</header>
-          {% endblock %}
-        </div>
+        <header class="col-2 bg-dark">
+          {% block navbar %} {% include 'includes/navbar.html' %} {% endblock %}
+        </header>
 
         <!-- Will contain the Main Body -->
-        <div class="col-10 bg-danger">
-          <main>{% block body %} {% endblock %}</main>
-        </div>
+        <main class="col-10 bg-danger">{% block body %} {% endblock %}</main>
       </div>
     </div>
 
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
   </body>
 </html>
+`
