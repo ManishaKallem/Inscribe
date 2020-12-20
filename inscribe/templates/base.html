@@ -1,29 +1,33 @@
+<!-- prettier-ignore -->
 {% load static %}
-
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>{% block title %}Inscribe{% endblock %}</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{% block title %}Inscribe{% endblock %}</title>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
     <link rel="stylesheet" href="{% static 'css/all.min.css'%}" />
     <link href="{% static 'css/base.css' %}" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="h-100 container-fluid">
-      <div class="row h-100">
-        <!-- Will contain the Navbar -->
-        <header class="col-2 bg-dark">
-          {% block navbar %} {% include 'includes/navbar.html' %} {% endblock %}
-        </header>
-
-        <!-- Will contain the Main Body -->
-        <main class="col-10 bg-danger">{% block body %} {% endblock %}</main>
-      </div>
+    <div class="d-flex" id="wrapper">
+      <!-- prettier-ignore -->
+      {% block navbar %} {% include 'includes/navbar.html' %} {% endblock %}
+      {% block body %} {% endblock %}
     </div>
-
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
   </body>
 </html>
-`
