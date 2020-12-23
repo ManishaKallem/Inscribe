@@ -38,4 +38,4 @@ details.
 ## Acknowledgments
 
 - Dr. Shashidhara, ASSISTANT PROFESSOR
-- Dr. Vijaypal Singh Rathor, ASSISTANT PROFESSOR
+- Dr. Vijaypal Singh Rathor, PROFESSOR
