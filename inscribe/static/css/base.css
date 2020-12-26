@@ -37,3 +37,9 @@
     margin-left: -10rem;
   }
 }
+.bg-navbar {
+  background-color: rgb(34, 31, 31) !important;
+}
+body {
+  background-color: black;
+}

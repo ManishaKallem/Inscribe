@@ -6,26 +6,17 @@
 
 {% block body %}
 <div id="page-content-wrapper">
-  <div class="container-fluid">
-    <h1 class="mt-4">Logo</h1>
-    <h3>Welcome to Inscribe</h3>
-
-    <p>
-      A web based note taking application.
-      The users can first create an account with Inscribe.
-      After they have logged in using their newly created account, they can create notes, diary entries, journal records and much more.
-      These notes will be saved to a database and can be accessed and edited later.
-    </p>
-    <p>
-      Make sure to keep all page content within the
-      <code>#page-content-wrapper</code>. The top navbar is optional, and just
-      for demonstration. Just create an element with the
-      <code>#menu-toggle</code> ID which will toggle the menu when clicked.
-    </p>
-
-    <h3 class="mx-auto">Public Blogs</h3>
-    <p>here we will have few publicly available blogs</p>
-    <a href = "something"> Read Public Blogs</a>
+  <div class="container-fluid h-100">
+    <div class="m-auto">
+      <div class="col-12 col-sm-6 bg-danger">Get started</div>
+      <div class="col-12 col-sm-6 bg-warning">
+        <img
+          class="img-fluid"
+          src="{% static 'images/landing-page.svg' %}"
+          alt="landing page picture"
+        />
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
