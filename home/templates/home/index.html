@@ -2,26 +2,31 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Inscribe{% endblock %}
+{% block additional_css %}
+<link href="{% static 'home/css/index.css' %}" rel="stylesheet" />
+{% endblock %}
 
-{% block body %}
-<div id="page-content-wrapper" >
+<!-- prettier-ignore -->
+{% block title %}Inscribe{% endblock %} {% block body %}
+<div id="page-content-wrapper">
   <div class="container-fluid min-vh-100 text-white">
     <div class="align-items-center d-flex min-vh-100 row">
       <div class="col-sm">
         <div>
-          <div>
-             A web based note taking application.
+          <div class="text-center display-6">
+            <div>A web based note taking application.</div>
+            <div>
+              Which enables you to create notes, make diary entries, journal
+              records virtually available to you anytime.
+            </div>
+            <div>
+              Join us along with many others in making one of the worlds best
+              community.
+            </div>
           </div>
-          <div>
-            Which enables you to create notes, make diary entries, journal records virtually available to you anytime.
-          </div>
-          <div>
-            Join us along with many others in making one of the worlds best community.
-          </div>
-        </div>
-        <div>
-          <button class="btn btn-success">Get started</button>
+         </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-success">Get started</a>
         </div>
       </div>
       <div class="col-sm">
