@@ -6,15 +6,20 @@
 
 {% block body %}
 <div id="page-content-wrapper" class="bg-pattern">
-  <div class="container-fluid h-100">
-    <div class="m-auto">
-      <div class="col-12 col-sm-6 bg-danger">Get started</div>
-      <div class="col-12 col-sm-6 bg-warning">
-        <img
-          class="img-fluid"
-          src="{% static 'images/landing-page.svg' %}"
-          alt="landing page picture"
-        />
+  <div class="container-fluid min-vh-100 text-white">
+    <div class="align-items-center d-flex min-vh-100 row">
+      <div class="col-sm">
+        <div>
+          <p>A web based note taking application.<br>
+          Which enables you to create notes, make diary entries, journal records virtually available to you anytime.<br>
+          Join us along with many others in making one of the worlds best community.</p>
+        </div>
+        <div>
+          <button class="btn btn-success">Get started</button>
+        </div>
+      </div>
+      <div class="col-sm">
+        <img src="{% static 'images/notes.svg' %}" class="img-fluid" alt="" />
       </div>
     </div>
   </div>
