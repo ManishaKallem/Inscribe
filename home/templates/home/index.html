@@ -11,7 +11,14 @@
 <div id="page-content-wrapper">
   <div class="container-fluid min-vh-100 text-white">
     <div class="align-items-center d-flex min-vh-100 row">
-      <div class="col-sm">
+      <div class="col-sm m-2">
+        <div class="text-center mx-auto">
+          <img
+            src="{% static 'images/logo.png' %}"
+            class="img-fluid mx-auto"
+            alt="inscribe logo"
+          />
+        </div>
         <div>
           <div class="text-center display-6 text-responsive">
             <div>A web based note taking application.</div>
@@ -24,13 +31,17 @@
               community.
             </div>
           </div>
-         </div>
-        <div class="text-center mt-4">
+        </div>
+        <div class="text-center my-2">
           <a class="btn btn-success">Get started</a>
         </div>
       </div>
       <div class="col-sm">
-        <img src="{% static 'images/notes.svg' %}" class="img-fluid" alt="" />
+        <img
+          src="{% static 'images/landing-page.svg' %}"
+          class="img-fluid"
+          alt="landing page picture"
+        />
       </div>
     </div>
   </div>
