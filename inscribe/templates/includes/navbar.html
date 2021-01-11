@@ -1,10 +1,14 @@
+{% load static %}
+
 <div class="d-flex flex-column bg-navbar text-warning" id="sidebar-wrapper">
-  <h1 class="text-center pt-3 text-uppercase">Inscribe</h1>
+  <div class="text-center pt-3 text-uppercase display-6">
+    <b>Inscribe</b>
+  </div>
   <div
-    class="list-group text-center list-group-flush flex-grow-1 justify-content-around"
+    class="list-group text-center mx-auto list-group-flush flex-grow-1 justify-content-around display-1 text-responsive"
   >
     <div class="d-flex flex-column">
-      <a href="#">
+      <a href="{% url 'home:index' %}">
         <svg
           class="text-danger"
           width="24"
@@ -21,8 +25,27 @@
       </a>
       <div>Home</div>
     </div>
+    {% if user.is_authenticated %}
     <div class="d-flex flex-column">
-      <a href="#">
+      <a href="{% url 'accounts:logout' %}">
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        >
+          <path
+            style="fill: #ffffff"
+            d="M11 21h8.033v-2l1-1v4h-9.033v2l-10-3v-18l10-3v2h9.033v5l-1-1v-3h-8.033v18zm-1 1.656v-21.312l-8 2.4v16.512l8 2.4zm11.086-10.656l-3.293-3.293.707-.707 4.5 4.5-4.5 4.5-.707-.707 3.293-3.293h-9.053v-1h9.053z"
+          />
+        </svg>
+      </a>
+      <div>Logout</div>
+    </div>
+    {% else %}
+    <div class="d-flex flex-column">
+      <a href="{% url 'accounts:login' %}">
         <svg
           width="24"
           height="24"
@@ -39,7 +62,7 @@
       <div>Login</div>
     </div>
     <div class="d-flex flex-column">
-      <a href="#">
+      <a href="{% url 'accounts:register' %}">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -54,6 +77,7 @@
       </a>
       <div>Register</div>
     </div>
+    {% endif %}
     <div class="d-flex flex-column">
       <a href="#">
         <svg
