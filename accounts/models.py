@@ -27,4 +27,4 @@ class CustomUser(AbstractUser):
         return f"{self.first_name} {self.last_name}"
 
     def __str__(self):
-        return f"{self.full_name}'s account"
+        return f"{self.full_name()}'s account"

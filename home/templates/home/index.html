@@ -1,13 +1,17 @@
 <!-- prettier-ignore -->
 {% extends 'base.html' %}
 {% load static %}
-
 {% block additional_css %}
 <link href="{% static 'home/css/index.css' %}" rel="stylesheet" />
 {% endblock %}
 
 <!-- prettier-ignore -->
-{% block title %}Inscribe{% endblock %} {% block body %}
+{% block title %}
+Inscribe
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
 <div id="page-content-wrapper">
   <div class="container-fluid min-vh-100 text-white">
     <div class="align-items-center d-flex min-vh-100 row">
