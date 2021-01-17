@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     # user installed apps
     "home.apps.HomeConfig",
     "accounts.apps.AccountsConfig",
+    "notes.apps.NotesConfig",
     # django add-ons
     "django_extensions",
 ]
