@@ -19,6 +19,8 @@ commitizen = "^2.11.0"
 pytest-django = "^4.1.0"
 django-extensions = "^3.1.0"
 black = {version = "^20.8b1", allow-prereleases = true}
+Faker = "^5.6.1"
+mdgen = "^0.1.7"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
