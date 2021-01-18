@@ -23,6 +23,7 @@
     "howto",
     "makemigrations",
     "markdownit",
+    "mdgen",
     "nargs",
     "plotly",
     "postgresql",
